@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="my-cart1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Cart_Shopping </title>
+  </head>
+  <body>
+    <!-- <div class="container-fluid fixed-top header"> -->
+    <div class="strip fixed-top"></div>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">      
+      <div class="parent">        
+        <div class="float-left pl-5" >
+           <ul class="menu">
+            <li class="menu">
+              <a class=" logo menu" href="#">Learnweel</a>
+           </li>
+          </ul>
+          </div> <!--.left-->
+          <!-- Toggler Button     -->
+          <div class="togbtn">
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <!-- .togbtn  -->
+          <!--.Right-->
+          <div class=" float-right collapse navbar-collapse"  id="navbarSupportedContent" >            
+            <ul class="menu navbar-nav mr-auto  mt-2 mt-lg-0  ">
+              <li class="menu" >
+                <a href="#" class=" menu">
+                  Store
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#"  class="menu">
+                  About Us
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#" class="menu">
+                  SignUp
+                </a>
+              </li>
+              <li class="menu ">
+                <a href="#"  class="nav-btn">
+                  <button type="button" class="login-btn ">
+                  Login
+                  </button>
+                </a>
+              </li>            
+          </ul>            
+            </div><!--.collapse-->            
+            </div><!-- .parent-->            
+            </nav><!--.nav-->
+
+           
+    <!-- ============================= navbar end here======================================-->
+            
+    <!--==============================Progress Bar==========================================-->
+              <div class=" container section">              
+                <div class="form-progress">
+
+                <!-- on click submit button  vaule of attribute in progress tag first goes to 33 then 66 and at final 99
+                this makes the progress bar green from one dot to another   -->
+
+<progress class="form-progress-bar" min="0" max="100" value="50" step="33" aria-labelledby="form-progress-completion"></progress>
+
+  <div class="form-progress-indicator one active"><span class="progress-value"><a href="./index.html">Cart</a></span></div>
+  <div class="form-progress-indicator two active "><span class="progress-value"><a href="./member.html">Billing </a> </span></div>
+  <div class="form-progress-indicator three "><span class="progress-value"><a href="#"> Payment</a></span></div>
+<!--   <div class="form-progress-indicator four  "><span class="progress-value">Succesful</span></div> -->
+              
+              <!-- <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p> -->
+             </div>
+       </div>
+
+
+
+
+
+ <!--===================================Main-Division===========================================-->
+
+<div class="container main-div-form float-none">
+
+ <!--===================================Left-Division===========================================-->
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>shipping address</h1>
+    <hr>
+	<label for="email"><b>email</b></label>
+    <input type="text" placeholder="email" name="email">
+	<br>
+    <label for="firstname"><b>firstname</b></label>
+    <input type="text" placeholder="firstname" name="firstname" >
+	<br>
+	<label for="lastname"><b>lastname</b></label>
+    <input type="text" placeholder="lastname" name="lastname" >
+	<br>
+	<label for="phno"><b>phone number</b></label>
+    <input type="number" placeholder="phone number" name="phone number">
+	<br>
+    <label for="address"><b>address</b></label>
+    <input type="address" placeholder="enter your address" name="address" >
+	<br>
+    <label for="city"><b>city</b></label>
+    <input type="city" placeholder="city of residence" name="city" >
+	<br>
+	<fieldset>
+				<label for="city"><b>state</b></label>
+                  <label class="state"> 
+                  <select class="select-style" name="state">
+                  <option value="">state</option>
+                  <option  value="01">Andhra Pradesh</option>
+                  <option value="02">Arunachal Pradesh </option>
+                  <option value="03">Assam</option>
+                  <option value="04">Bihar </option>
+                  <option value="05">Chhattisgarh</option>
+                  <option value="06">Goa</option>
+                  <option value="07">Gujarat</option>
+                  <option value="08">Haryana</option>
+                  <option value="09">Himachal Pradesh</option>
+                  <option value="10">Jharkhand</option>
+                  <option value="11">Karnataka</option>
+                  <option value="12">Kerala</option>
+				          <option  value="13">Madhya Pradesh</option>
+                  <option value="14">Maharashtra</option>
+                  <option value="15">Manipur</option>
+                  <option value="16">Meghalaya</option>
+                  <option value="17">Mizoram</option>
+                  <option value="18">Nagaland</option>
+                  <option value="19">Odisha</option>
+                  <option value="20">Punjab</option>
+                  <option value="21">Rajasthan</option>
+                  <option value="22">Sikkim</option>
+                  <option value="23">Tamil Nadu</option>
+                  <option value="24">Telangana</option>
+				          <option value="25">Tripura</option>
+                  <option value="26">Uttarakhand</option>
+                  <option value="27">Uttar Pradesh</option>
+                  <option value="28">West Bengal</option>
+                  </label>
+                 </select> 
+			</fieldset>
+	<label for="pincode"><b>pincode</b></label>
+    <input type="pincode" placeholder="pincode" name="pincode" id="pincode">
+	<label>
+  </div>
+</form>
+<hr>
+<button type="submit" position="center" class="input-group-text-form btn">Proceed to payment</button>
+<!---================================Footer==================================================================--->
+<div class="footer container-fluid">
+  
+</div>
+
+
+
+
+
+<!---================================Script-part==================================================================--->
+
+
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                    </body>
+                  </html>
